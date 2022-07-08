@@ -1,0 +1,55 @@
+body {
+    /* background-color: rgb(219, 128, 105); */
+    background-color: #5376DB;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 7vh;
+}
+iframe {
+    width: 50vw;
+    height: 20vw;
+}
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.6vh;
+}
+#btn-cep {
+    width: 8vw;
+    height: 5vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+#btn-cep:hover {
+    background-color: #28428F;
+    transition: 0.6s ease-in-out;
+    color: rgb(233, 229, 229);
+}
+#btn-map {
+    width: 10vw;
+    height: 5vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+#btn-map:hover {
+    background-color: #28428F;
+    transition: 0.6s  ease-in-out;
+    color: rgb(233, 229, 229);
+}
