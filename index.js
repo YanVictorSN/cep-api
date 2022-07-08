@@ -61,7 +61,7 @@ function zipRequest() {
         result.innerHTML = 'Por favor, insira um CEP válido!'
         document.querySelector('iframe').hidden = true;
         document.getElementById('btn-map').hidden = true;
-        document.body.style.cursor = 'default'
+        document.body.style.cursor = 'default';
     })
     .then((data) => {
         return data
@@ -69,9 +69,8 @@ function zipRequest() {
     .then((data) => {
         result.innerHTML = `Endereço: ${data.address} |
         Bairro: ${data.district} | Cidade: ${data.city} | Estado: ${data.state} | Latitude: ${data.lat} | Longitude: ${data.lng} `
-        console.log(data)
         document.getElementById('btn-map').hidden = false;
-        document.body.style.cursor = 'default'
+        document.body.style.cursor = 'default';
     })
 }
 
@@ -81,10 +80,10 @@ function mapRequest() {
     fetch(`https://cep.awesomeapi.com.br/json/${cepInputFormated}`, {method: 'GET'})
     .then((response) => {
         if (response.ok) {
-            return response.json()
+            return response.json();
         } 
         result.innerHTML = 'Não foi possível encontra o Mapa, tente novamente.'
-        document.body.style.cursor = 'default'
+        document.body.style.cursor = 'default';
     })
     .then((data) => {
         return data
@@ -93,6 +92,6 @@ function mapRequest() {
         document.querySelector('iframe').setAttribute ('src',`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15925.662962965489!2d${data.lng}!3d${data.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1657243691243!5m2!1spt-BR!2sbr`)
         document.querySelector('iframe').hidden = false;
         document.getElementById('btn-map').hidden = true;
-        document.body.style.cursor = 'default'
+        document.body.style.cursor = 'default';
     })
 }
