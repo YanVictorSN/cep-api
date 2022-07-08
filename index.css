@@ -1,5 +1,5 @@
 body {
-    /* background-color: rgb(219, 128, 105); */
+    background-color: rgb(219, 128, 105);
     background-color: #5376DB;
 }
 main {
@@ -15,8 +15,8 @@ h1 {
 }
 iframe {
     width: 50vw;
-    height: 20vw;
-}
+    height: 20vw; 
+} 
 input {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 3vh;
@@ -38,6 +38,10 @@ p {
     background-color: #28428F;
     transition: 0.6s ease-in-out;
     color: rgb(233, 229, 229);
+}
+#btn-cep[disabled]:hover {
+    background-color: rgba(239, 239, 239, 0.3);
+    color: rgba(16, 16, 16, 0.3);
 }
 #btn-map {
     width: 10vw;
